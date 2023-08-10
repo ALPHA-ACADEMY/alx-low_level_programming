@@ -1,12 +1,12 @@
 #include <unistd.h>
-#include <string.hi>
+#include <string.h>
 
 /**
  * main - Entry point
  *
  * Description: print a quote using the write function
  *
- * Return: 1 (not success)
+ * Return: 1 (error)
 */
 
 int main(void)
