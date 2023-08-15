@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - function that prints the alphabet,
@@ -7,7 +7,7 @@
  * Return: Always 0.
 */
 
-int main(void)
+void print_alphabet(void)
 {
 	char letter;
 
