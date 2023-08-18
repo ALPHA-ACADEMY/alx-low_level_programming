@@ -1,42 +1,22 @@
 #include "main.h"
 
 /**
- * print_number - function that prints an integer.
- * @n: number that we are gonna print just using _putchar.
- *
- * Return: nothing.
-*/
+ * print_number - Prints an integer.
+ * @n: The integer to be printed.
+ */
 
 void print_number(int n)
 {
-	int count_digit = 1;
-	int temp = n;
-	int s = 1;
+	unsigned int num = n;
 
-	if (n == 0)
-	{
-		_putchar('0');
-		return;
-	}
-	else if (n < 0)
+	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		num = -num;
 	}
 
-	while (temp / 10 != 0)
-	{
-		temp /= 10;
-		count_digit++;
-		s *= 10;
-	}
+	if ((num / 10) > 0)
+		print_number(num / 10);
 
-	while (count_digit > 0)
-	{
-		_putchar((n / s) + '0');
-		n = n % s;
-		s /= 10;
-		count_digit--;
-	}
+	_putchar((num % 10) + '0');
 }
-
