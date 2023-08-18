@@ -1,0 +1,24 @@
+#include "main.h"
+
+/**
+ * more_numbers - function that prints 10 times the numbers, from 0 --> 14.
+ *
+ * return: nothing because it is Void.
+*/
+
+void more_numbers(void)
+{
+	int i;
+
+	for (count = 0; count <=10; count++)
+	{	
+		for (i = 0; i <= 14; i++)
+		{
+			if (i>=10)
+				_putchar('1');
+			_putchar((i % 10) + '0');
+		}
+	
+		_putchar('\n');
+	}
+}
