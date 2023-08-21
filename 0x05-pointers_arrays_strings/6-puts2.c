@@ -9,7 +9,7 @@
 
 void puts2(char *str)
 {
-	int i=-1;
+	int i = -1;
 
 	while (str[++i])
 	{
