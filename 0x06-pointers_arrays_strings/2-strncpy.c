@@ -2,7 +2,7 @@
 
 /**
 * _strncpy - function that copies a string.
-* @des: the string
+* @dest: the string
 * @src: the string
 * @n: the number of bytes from src to be appended to des.
 *
