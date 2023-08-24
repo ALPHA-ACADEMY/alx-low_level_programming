@@ -9,9 +9,9 @@
 
 char *leet(char *str)
 {
-	int i = 0, j;
+	int i = 0, j = 0;
 
-	char leet[8] = {'0', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	char leet[8] = {'0', 'L', '°', 'E', 'A', '°', '°', 'T'};
 
 	while (str[i])
 	{
