@@ -8,12 +8,12 @@
  * Return: always (0) On success.
 */
 
-int main(int argc __attribute__((unused)), char **argv)
+int main(int argc, char **argv)
 {
-	while(*argv)
-	{
-		printf("%s\n", *argv);
-		argv++;
-	}
+	(void)argc;
+
+	while (*argv)
+		printf("%s\n", *argv++);
+
 	return (0);
 }
