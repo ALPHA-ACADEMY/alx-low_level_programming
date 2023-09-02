@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - prints the name ofthe programe.exe.
@@ -8,15 +9,9 @@
  * Return: Always 0.
 */
 
-int main(int argc, char **argv)
+int main(int argc __attribute__((unused)), char **argv)
 {
-	int i;
+	printf("%s\n", *argv);
 
-	(void)argc;
-	i = 0;
-
-	while (argv[0][i])
-	{
-		_putchar(argv[0][i++]);
-	}
+	return (0);
 }
