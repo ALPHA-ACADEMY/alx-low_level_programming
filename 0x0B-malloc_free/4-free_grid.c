@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * free_grid : function that free a 2d array of integer.
+ * free_grid - function that free a 2d array of integer.
  * @grid: The 2d array?
  * @height: The height of grid.
 */
