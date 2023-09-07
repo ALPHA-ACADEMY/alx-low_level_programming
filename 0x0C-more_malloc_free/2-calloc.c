@@ -20,12 +20,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	array = malloc(size * nmemb);
 	if (array == NULL)
-		return NULL;
+		return (NULL);
 
 	fill = array;
 
 	for (i = 0; i < (size * nmemb); i++)
 		fill[i] = '\0';
 
-	return array;
+	return (array);
 }
