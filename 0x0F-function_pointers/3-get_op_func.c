@@ -2,8 +2,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/***/
-
+/**
+ * get_op_func - determines which of the operations to use
+ * @s: string parameter
+ *
+ * Return: pointer to operation
+ */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
@@ -19,9 +23,9 @@ int (*get_op_func(char *s))(int, int)
 	i = 0;
 	while (ops[i].f != NULL)
 	{
-		if (*s == *(ops[i].op) && s[i] == '\0')
+		if (*s == *(ops[i].op) && s[1] == '\0')
 			return (ops[i].f);
-	       i++;	
+		i++;
 	}
 
 	printf("Error\n");
