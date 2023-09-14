@@ -1,8 +1,16 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <strarg.h>
+#include <stdarg.h>
 
-/***/
+/**
+ * print_strings - Print strings, followed by a new line.
+ * @seperator: The string to be printed between strings.
+ * @n: The number of  string.
+ * @...: A variable number of strings to be printed.
+ *
+ * Return: if separator is NULL, it is not printed.
+ *		if one of the string is NULL ---> nil.
+*/
 
 
 void print_strings(const char *separator, const unsigned int n, ...)
